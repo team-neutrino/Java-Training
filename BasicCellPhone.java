@@ -12,9 +12,10 @@ public class BasicCellPhone {
         int thresholdB = 1000;
         double extraChargeB = 10.00;
 
+        double[] thing = {0.0, 1.0, 4.0, 102.0};
+
         String cheaperPlan = findCheaperPlan(numberOfMessages, priceA, messageA, thresholdA, extraChargeA, priceB, messageB, thresholdB, extraChargeB);
 
-        System.out.println(cheaperPlan);
     }
 
     private static String findCheaperPlan(int numberOfMessages,double basePriceA,double messageA,int thresholdA,double extraChargeA,double basePriceB,double messageB,int thresholdB,double extraChargeB){
