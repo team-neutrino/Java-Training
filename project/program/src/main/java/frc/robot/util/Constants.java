@@ -27,7 +27,7 @@ public final class Constants {
     public static final int LED_PORT = 9;
     public static final int NUMBER_OF_LEDS = 10;
     public static final int[] DEFAULT_COLOR = { 255, 0, 255 };
-    public static final int[] ORANGE = { 255, 165, 0 };
+    public static final int[] Yuck = { 154, 205, 50 };
   }
 
   public static class OperatorConstants {
