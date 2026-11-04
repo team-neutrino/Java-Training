@@ -37,7 +37,6 @@ public class Motor extends SubsystemBase {
     @Override
     public void periodic() {
         m_motor.set(m_speed);
-        System.out.println(getMotorRPM());
     }
 
     public Command defaultMotorCommand() {
