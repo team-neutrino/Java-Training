@@ -9,4 +9,8 @@ public class LEDFactory {
     public static Command turnOrange() {
         return led.setLEDColor(ORANGE);
     }
+
+    public static Command turnRainbow() {
+        return led.runRainbow();
+    }
 }

@@ -32,7 +32,9 @@ public class RobotContainer {
   private void configureBindings() {
     m_driverController.rightTrigger().whileTrue(MotorFactory.startMotor());
     m_driverController.leftTrigger().whileTrue(LEDFactory.turnOrange());
+    m_driverController.leftBumper().whileTrue(LEDFactory.turnRainbow());
     m_driverController.a().whileTrue(SuperstructureFactory.runBoth());
+
   }
 
   public Command getAutonomousCommand() {

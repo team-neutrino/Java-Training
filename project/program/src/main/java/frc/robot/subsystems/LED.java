@@ -11,6 +11,7 @@ public class LED extends SubsystemBase {
 
     private AddressableLED m_led;
     private AddressableLEDBuffer m_ledBuffer;
+    private int m_count;
 
     public LED() {
         m_led = new AddressableLED(LED_PORT);
@@ -42,4 +43,15 @@ public class LED extends SubsystemBase {
             }
         });
     }
+
+    public Command runRainbow() {
+        return run(() -> {
+            for (int a = 0; a < NUMBER_OF_LEDS; a++) {
+                for (int i = 0; i < NUMBER_OF_LEDS; i++) {
+                    m_ledBuffer.setHSV(i, (i + a) * 36, 255, 255);
+                }
+            }
+        });
+    }
+
 }
