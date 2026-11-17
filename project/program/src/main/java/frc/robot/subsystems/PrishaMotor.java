@@ -4,11 +4,16 @@
 
 package frc.robot.subsystems;
 
+import com.ctre.phoenix6.configs.TalonFXConfiguration;
+import com.ctre.phoenix6.hardware.TalonFX;
+
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
-import 
+
 
 public class PrishaMotor extends SubsystemBase {
-private
+  private TalonFX m_pmotor= new TalonFX(14);
+  private TalonFXConfiguration m_motorconfig;
+  
   public PrishaMotor() {
 
   }
