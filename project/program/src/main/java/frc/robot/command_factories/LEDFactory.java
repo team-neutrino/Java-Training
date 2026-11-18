@@ -10,7 +10,11 @@ public class LEDFactory {
         return led.setLEDColor(ORANGE);
     }
 
-    public static Command turnRainbow() {
-        return led.runRainbow();
+    public static Command turnRainbowLeft() {
+        return led.runRainbowLeft();
+    }
+
+    public static Command turnRainbowRight() {
+        return led.runRainbowRight();
     }
 }
